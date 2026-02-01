@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: gray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu button {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Welcome to S.Boonmeerit</h1>
+
+<label>User</label>
+<input type="text">
+
+<label>Password</label>
+<input type="password">
+
+<button><a href="home.html">Login</a></button>
+<br><br>
+<button><a href="feedback.html">Feedback</a></button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container menu">
+<h2>ข้อมูลพนักงานและวัสดุก่อสร้าง</h2>
+
+<button><a href="employee.html">ข้อมูลพนักงาน</a></button>
+<button><a href="material.html">ข้อมูลวัสดุก่อสร้าง</a></button>
+<button><a href="index.html">BACK</a></button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>ข้อมูลพนักงาน</h2>
+
+<div class="card">
+<b>SENIOR SPECIALIST</b><br>
+ESTELLE DARCY<br>
+hello@reallygreatsite.com<br>
+<a href="employee_detail.html"><button>ดูรายละเอียด</button></a>
+</div>
+
+<div class="card">
+<b>JUNIOR SPECIALIST</b><br>
+JIARA MARTINS<br>
+hello@reallygreatsite.com<br>
+<a href="employee_detail.html"><button>ดูรายละเอียด</button></a>
+</div>
+
+<button><a href="home.html">BACK</a></button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Detail</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>นายขยัน มันจัด</h2>
+<p>รหัสพนักงาน: 07696666</p>
+
+<p>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+
+<button><a href="employee.html">BACK</a></button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Material</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>ข้อมูลวัสดุก่อสร้าง</h2>
+
+<table>
+<tr>
+<th>ชื่อ</th>
+<th>จำนวน</th>
+<th>ซื้อเพิ่ม</th>
+<th>เบิกใช้</th>
+<th>คงเหลือ</th>
+</tr>
+<tr>
+<td>ปูนซีเมนต์</td>
+<td>100</td>
+<td>20</td>
+<td>10</td>
+<td>110</td>
+</tr>
+<tr>
+<td>เหล็ก</td>
+<td>50</td>
+<td>10</td>
+<td>5</td>
+<td>55</td>
+</tr>
+</table>
+
+<button>SAVE</button>
+<button><a href="home.html">BACK</a></button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>รายงานปัญหาการใช้งาน</h2>
+
+<label>Email</label>
+<input type="email">
+
+<label>ให้คะแนนบริการ</label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+
+<label>ความคิดเห็น</label>
+<textarea rows="5"></textarea>
+
+<button>ส่งฟีดแบ็ค</button>
+<br><br>
+<button><a href="index.html">BACK</a></button>
+</div>
+
+</body>
+</html>
